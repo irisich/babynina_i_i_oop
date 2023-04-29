@@ -4,6 +4,7 @@ add_test(NAME rational_test COMMAND rational_test)
 
 add_executable(arrayd_test arrayd_test.cpp)
 target_link_libraries(arrayd_test arrayd doctest::doctest)
+<<<<<<< HEAD
 add_test(NAME arrayd_test COMMAND arrayd_test)
 
 add_executable(arrayt_test arrayt_test.cpp)
@@ -13,3 +14,6 @@ add_test(NAME arrayt_test COMMAND arrayt_test)
 add_executable(martixs_test martixs_test.cpp)
 target_link_libraries(martixs_test martixs doctest::doctest)
 add_test(NAME martixs_test COMMAND martixs_test)
+=======
+add_test(NAME arrayd_test COMMAND arrayd_test)
+>>>>>>> b990f82814904657c5f3aa6783f50774377d5fd4

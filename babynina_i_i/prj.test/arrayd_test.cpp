@@ -1,5 +1,6 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <doctest/doctest.h>
+<<<<<<< HEAD
 
 #include <arrayd/arrayd.hpp>
 
@@ -33,4 +34,10 @@ TEST_CASE("[arrayd] - arrayd2") {
   for(int i = 0; i < mass2.ssize(); i++){
     CHECK(mass1[i] == mass2[i]);
   }
+=======
+#include <arrayd/arrayd.hpp>
+
+TEST_CASE("Creating"){
+	CHECK(0 == 0);
+>>>>>>> b990f82814904657c5f3aa6783f50774377d5fd4
 }
