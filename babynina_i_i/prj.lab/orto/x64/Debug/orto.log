@@ -1,0 +1,3 @@
+﻿  orto.cpp
+D:\oop\orto\orto.cpp(23,14): error C2011: geo2d::orto::Rect: переопределение типа "class"
+D:\oop\orto\orto.cpp(15,9): message : см. объявление "geo2d::orto::Rect"
