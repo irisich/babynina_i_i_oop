@@ -1,0 +1,10 @@
+^D:\OOP\BABYNINA_I_I_OOP\BABYNINA_I_I\BUILD\CMAKEFILES\874577101B22CF509D361284D3F8C136\GENERATE.STAMP.RULE
+setlocal
+D:\oop\bin\cmake.exe -SD:/oop/babynina_i_i_oop/babynina_i_i -BD:/oop/babynina_i_i_oop/babynina_i_i/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/oop/babynina_i_i_oop/babynina_i_i/build/arrayD.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^D:\OOP\BABYNINA_I_I_OOP\BABYNINA_I_I\PRJ.LAB\ARRAYT\CMAKELISTS.TXT
+setlocal
+D:\oop\bin\cmake.exe -SD:/oop/babynina_i_i_oop/babynina_i_i -BD:/oop/babynina_i_i_oop/babynina_i_i/build --check-stamp-file D:/oop/babynina_i_i_oop/babynina_i_i/build/prj.lab/arrayt/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

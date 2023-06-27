@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\oop\babynina_i_i_oop\babynina_i_i\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\oop\babynina_i_i_oop\babynina_i_i\build\prj.cw\Release\QRBeautify_Test.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\oop\babynina_i_i_oop\babynina_i_i\build\prj.test\Release\arr.test.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\oop\babynina_i_i_oop\babynina_i_i\build\prj.lab\arrayt\x64\Release\arrayt</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\oop\babynina_i_i_oop\babynina_i_i\build\x64\Release\doc_doxygen</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\oop\babynina_i_i_oop\babynina_i_i\build\prj.test\Release\rat.test.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\oop\babynina_i_i_oop\babynina_i_i\build\prj.test\Release\tarr.test.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\oop\babynina_i_i_oop\babynina_i_i\build\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

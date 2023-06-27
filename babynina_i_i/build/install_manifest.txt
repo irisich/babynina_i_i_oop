@@ -1,0 +1,8 @@
+D:/oop/babynina_i_i_oop/babynina_i_i/./CW/./rtf/classqrcodegen_1_1data__too__long.png
+D:/oop/babynina_i_i_oop/babynina_i_i/./CW/./rtf/classqrcodegen_1_1_bit_buffer.png
+D:/oop/babynina_i_i_oop/babynina_i_i/./CW/./rtf/dir_b21e684b525acb3a5e7eb0bd0c8c6c5e.rtf
+D:/oop/babynina_i_i_oop/babynina_i_i/./CW/./rtf/refman.rtf
+D:/oop/babynina_i_i_oop/babynina_i_i/./CW/bin/QRBeautify_Test.exe
+D:/oop/babynina_i_i_oop/babynina_i_i/./CW/bin/cat.png
+D:/oop/babynina_i_i_oop/babynina_i_i/./CW/lib/QRBeautify.lib
+D:/oop/babynina_i_i_oop/babynina_i_i/./CW/lib/argParser.lib

@@ -9,50 +9,50 @@ enum AnchorShape {
     Round
 };
 
-/// @brief Main class
+/// @brief Основной класс
 class QrBeautifier {
     QrCode qr;
     pngwriter image;
     const char* text;
 
-    /*! @brief Function to generate QR code and save it internally
+    /*! @brief Функция для создания и сохранения QR-кода
     */
     QrCode generateQRCode();
 public:
-    /*! @brief Empty default constructor
+    /*! @brief Пустой умолчательный конструктор
     * 
-    * @param[in] text QR code text
+    * @param[in] text Текст QR-кода
     */
     QrBeautifier(const char* text);
     
-    /*! @brief Function to save QR to file
+    /*! @brief Функция для сохранения QR-кода
     */
     void saveImage();
 
-    /*! @brief Function for creating solid-color QR-code
+    /*! @brief Функция для заливки QR-кода
     *
-    * @param[in] red Red color 0-255
-    * @param[in] green Green color 0-255
-    * @param[in] blue Blue color 0-255
-    * @param[in] shape Desired anchor shape (corner blocks)
+    * @param[in] red красный цвет 0-255
+    * @param[in] green зеленый цвет 0-255
+    * @param[in] blue синий цвет 0-255
+    * @param[in] shape форма угловых маркеров
     */
     void makeSolidImage(int red, int green, int blue, AnchorShape shape);
 
-    /*! @brief Function for adding QR code over image
+    /*! @brief Функция для наложения поверх изображения
     *
-    * @param[in] image_path Path to the desired image
+    * @param[in] image_path Путь к изображению
     */
     void overlayImageWithQR(const char* image_path);
 
-    /*! @brief Function for encoding QR code with image data
+    /*! @brief Функция для встраивания картинки в QR-код
     *
-    * @param[in] image_path Path to the desired image
+    * @param[in] image_path Путь к изображению
     */
     void overlayQRWithImage(const char* image_path);
 
-    /*! @brief Function for generating heatmap-like QR code
+    /*! @brief Функция для генерации heatmap QR-кода
     *
-    * @param[in] shape Desired anchor shape (corner blocks)
+    * @param[in] shape форма угловых маркеров
     */
     void heatmap(AnchorShape shape);
 };
