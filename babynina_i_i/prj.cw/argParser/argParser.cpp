@@ -227,9 +227,8 @@ namespace ArgumentParser {
                             return false;
                         }
                         argumentInt->valueProvided = true;
-                        ++i;
                     }
-                    
+                    ++i;
                 }
 
                 if (type == ArgType::String) {

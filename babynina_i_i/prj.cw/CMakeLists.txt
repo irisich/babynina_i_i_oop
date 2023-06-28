@@ -20,8 +20,8 @@ install(TARGETS QRBeautify_Test DESTINATION bin)
 install(FILES cat.png DESTINATION bin)
 
 
-install(DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE}/
-        DESTINATION bin/
+install(DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE}
+        DESTINATION bin
         FILES_MATCHING 
         PATTERN "*.dll"
         PATTERN "*.so")

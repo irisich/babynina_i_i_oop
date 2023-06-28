@@ -49,6 +49,7 @@ int main(int argc, char** argv) {
 		        qr.saveImage();
 
             }
+
         }
         
         if (parser.GetArgumentCount("heatmap") > 0) {
