@@ -41,18 +41,18 @@ void QrBeautifier::makeSolidImage(int red, int green, int blue, AnchorShape shap
         }
     }
     if (shape == AnchorShape::Round) {
-        // top-left anchor
-        image.filledsquare(square_size * (border), square_size * (border + anchor_size), square_size * (border + anchor_size), square_size * (border), 1.0, 1.0, 1.0);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + 0.5 * anchor_size), square_size * anchor_size * 0.5, (double)red / 256, (double)green / 256, (double)blue / 256);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + 0.5 * anchor_size), square_size * (anchor_size - 2) * 0.5, 1.0, 1.0, 1.0);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + 0.5 * anchor_size), square_size * (anchor_size - 4) * 0.5, (double)red / 256, (double)green / 256, (double)blue / 256);
-
         // bottom-left anchor
-        image.filledsquare(square_size * (border), square_size * (border + qr.getSize() - anchor_size), square_size * (border + anchor_size), square_size * (border + qr.getSize()), 1.0, 1.0, 1.0);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * anchor_size * 0.5, (double)red / 256, (double)green / 256, (double)blue / 256);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * (anchor_size - 2) * 0.5, 1.0, 1.0, 1.0);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * (anchor_size - 4) * 0.5, (double)red / 256, (double)green / 256, (double)blue / 256);
-        
+        image.filledsquare(square_size * (border), 1000 - square_size * (border + qr.getSize() - anchor_size), square_size * (border + anchor_size), 1000 - square_size * (border + qr.getSize()), 1.0, 1.0, 1.0);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * anchor_size * 0.5, (double)red / 256, (double)green / 256, (double)blue / 256);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * (anchor_size - 2) * 0.5, 1.0, 1.0, 1.0);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * (anchor_size - 4) * 0.5, (double)red / 256, (double)green / 256, (double)blue / 256);
+
+        // top-left anchor
+        image.filledsquare(square_size * (border), 1000 - square_size * (border), square_size * (border + anchor_size), 1000 - square_size * (border + anchor_size), 1.0, 1.0, 1.0);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + 0.5 * anchor_size), square_size * anchor_size * 0.5, (double)red / 256, (double)green / 256, (double)blue / 256);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + 0.5 * anchor_size), square_size * (anchor_size - 2) * 0.5, 1.0, 1.0, 1.0);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + 0.5 * anchor_size), square_size * (anchor_size - 4) * 0.5, (double)red / 256, (double)green / 256, (double)blue / 256);
+
         // top-right anchor
         image.filledsquare(square_size * (border + qr.getSize() - anchor_size), 1000 - square_size * (border), square_size * (border + qr.getSize()), 1000 - square_size * (border + anchor_size), 1.0, 1.0, 1.0);
         image.filledcircle(square_size * (border + qr.getSize() - 0.5 * anchor_size), 1000 - square_size * (border + 0.5 * anchor_size), square_size * anchor_size * 0.5, (double)red / 256, (double)green / 256, (double)blue / 256);
@@ -155,17 +155,17 @@ void QrBeautifier::heatmap(AnchorShape shape) {
         }
     }
     if (shape == AnchorShape::Round) {
-        // top-left anchor
-        image.filledsquare(square_size * (border), square_size * (border + anchor_size), square_size * (border + anchor_size), square_size * (border), 0, 0, 0);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + 0.5 * anchor_size), square_size * anchor_size * 0.5, 220.0/256,30.0/256,30.0/256);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + 0.5 * anchor_size), square_size * (anchor_size - 2) * 0.5, 0, 0, 0);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + 0.5 * anchor_size), square_size * (anchor_size - 4) * 0.5, 220.0/256,30.0/256,30.0/256);
-
         // bottom-left anchor
-        image.filledsquare(square_size * (border), square_size * (border + qr.getSize() - anchor_size), square_size * (border + anchor_size), square_size * (border + qr.getSize()), 1.0, 1.0, 1.0);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * anchor_size * 0.5, 220.0/256,30.0/256,30.0/256);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * (anchor_size - 2) * 0.5, 1.0, 1.0, 1.0);
-        image.filledcircle(square_size * (border + 0.5 * anchor_size), square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * (anchor_size - 4) * 0.5, 220.0/256,30.0/256,30.0/256);
+        image.filledsquare(square_size * (border), 1000 - square_size * (border + qr.getSize() - anchor_size), square_size * (border + anchor_size), 1000 - square_size * (border + qr.getSize()),  1.0, 1.0, 1.0);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * anchor_size * 0.5, 220.0/256,30.0/256,30.0/256);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * (anchor_size - 2) * 0.5,  1.0, 1.0, 1.0);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + qr.getSize() - 0.5 * anchor_size), square_size * (anchor_size - 4) * 0.5, 220.0/256,30.0/256,30.0/256);
+
+        // top-left anchor
+        image.filledsquare(square_size * (border), 1000 - square_size * (border), square_size * (border + anchor_size), 1000 - square_size * (border + anchor_size),  1.0, 1.0, 1.0);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + 0.5 * anchor_size), square_size * anchor_size * 0.5, 220.0/256,30.0/256,30.0/256);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + 0.5 * anchor_size), square_size * (anchor_size - 2) * 0.5,  1.0, 1.0, 1.0);
+        image.filledcircle(square_size * (border + 0.5 * anchor_size), 1000 - square_size * (border + 0.5 * anchor_size), square_size * (anchor_size - 4) * 0.5, 220.0/256,30.0/256,30.0/256);
         
         // top-right anchor
         image.filledsquare(square_size * (border + qr.getSize() - anchor_size), 1000 - square_size * (border), square_size * (border + qr.getSize()), 1000 - square_size * (border + anchor_size), 1.0, 1.0, 1.0);
